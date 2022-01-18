@@ -67,4 +67,9 @@ class Player:
         if counter == 9:
             print("it's a draw!")
             self.grid.print_grid()
-            exit(0)
+            new_game = self.grid.restart()
+            if new_game == True:
+                self.grid.current_state = [[" ", " ", " "],[" ", " ", " "],[" ", " ", " "]]  #to track which ones are occupied
+                self.grid.counter = 0
+            else:
+                exit(0)
