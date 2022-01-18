@@ -55,9 +55,14 @@ class Player:
         self.grid.current_state[0][2] == self.sign and self.grid.current_state[1][1] == self.sign and self.grid.current_state[2][0] == self.sign):
             print(f"{self.name} wins!")#
             self.grid.print_grid()
-            exit(0)
+            new_game = self.grid.restart()
+            if new_game == True:
+                self.grid.current_state = [[" ", " ", " "],[" ", " ", " "],[" ", " ", " "]]  #to track which ones are occupied
+                self.grid.counter = 0
+            else:
+                exit(0)
 
-    
+
     def is_draw(self,counter):
         if counter == 9:
             print("it's a draw!")

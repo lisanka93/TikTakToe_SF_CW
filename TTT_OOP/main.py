@@ -9,7 +9,7 @@ if __name__ == "__main__":
     grid = Grid()
 
     #player = Player(name=input(f"your name: "), is_computer=False,grid=grid, sign = "X")
-    player = Player(name=input(f"your name: ", is_computer=False,grid=grid, sign = "X")
+    player = Player(name=input(f"your name: "), is_computer=False,grid=grid, sign = "X")
     computer = Player(name="Computer", is_computer=True,grid=grid, sign = "O")
 
 
