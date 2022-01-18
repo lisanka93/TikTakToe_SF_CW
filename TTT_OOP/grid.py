@@ -11,3 +11,4 @@ class Grid:
     def print_grid(self):
         for i in self.current_state:
             print(i)
+        print()
