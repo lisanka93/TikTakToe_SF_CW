@@ -4,7 +4,6 @@ just did it as a quick exercise - coordinates need to be inputed in the pythonic
 
 
 | O | O | O | 
-|---|---|---|
 | O | O | O | 
 | O | X | O | 
 
